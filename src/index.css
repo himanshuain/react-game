@@ -1,0 +1,92 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  margin: 0;
+  font-family: 'Karla', sans-serif ;
+  display: grid;
+  place-items: center;
+}
+
+.main {
+  background-color: #F5F5F5;
+  height:500px;
+  width: 800px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+} 
+.die-face {
+  height: 50px;
+  width: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.die-num {
+  font-size: 2rem;
+}
+
+.roll-dice{
+  position: relative;
+  top: 10px;
+  background-color: rgb(37, 72, 225);
+  color: #F5F5F5;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0.8em 1.8em;
+  cursor:pointer;
+  user-select:none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-family: 'Karla', sans-serif ;
+}
+
+
+.roll-dice:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 6px;
+  top:0;
+  left: 0px;
+  bottom: 0px;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 30px 30px rgb(24, 106, 230);
+}
+
+.roll-dice:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 6px;
+  left: 120px;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.roll-dice:active {
+  top: 1px;
+}
+
