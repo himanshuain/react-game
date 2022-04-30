@@ -5,6 +5,7 @@
 
 body {
   background-image: url("./images/bg.jpeg");
+  
   background-size: cover;
   padding: 20px;
   margin: 0;
@@ -15,6 +16,7 @@ body {
 
 .main {
   height:500px;
+  background-color: #F5F5F5;
   width: 800px;
   border-radius: 5px;
   padding: 20px;
@@ -78,7 +80,7 @@ body {
 }
 
 .roll-dice:active:after {
-  box-shadow: 0 0 0 0 white;
+  box-shadow: 0 0 0 0 rgb(56, 52, 52);
   position: absolute;
   border-radius: 6px;
   left: 120px;
