@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-image: url("./images/bg.jpeg");
+  background-size: cover;
   padding: 20px;
   margin: 0;
   font-family: 'Karla', sans-serif ;
@@ -13,7 +14,6 @@ body {
 }
 
 .main {
-  background-color: #F5F5F5;
   height:500px;
   width: 800px;
   border-radius: 5px;
@@ -28,6 +28,7 @@ body {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
   gap: 20px;
+  
 } 
 .die-face {
   height: 50px;
