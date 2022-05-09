@@ -15,12 +15,12 @@ body {
 }
 
 .main {
-  height:500px;
+  min-height:500px;
   background-color: #F5F5F5;
-  width: 800px;
+  min-width: 800px;
   border-radius: 5px;
-  padding: 20px;
-  margin-top: 50px;
+  padding: 10%;
+  margin-top: 15%;
   display: grid;
   place-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -30,7 +30,20 @@ body {
   font-weight: bolder;
   font-size: x-large;
   color: rgb(171, 164, 178);
+  
 }
+
+.start-game{
+  border: none;
+  background-color: rgb(0, 0, 0);
+  font-size: larger;
+  font-weight: bolder;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .dice-container {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
@@ -46,7 +59,6 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
 }
 
 .die-num {
@@ -68,30 +80,6 @@ body {
   cursor: pointer;
   transition-duration: 0.4s;
   font-family: 'Karla', sans-serif ;
-}
-
-
-.roll-dice:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 6px;
-  top:0;
-  left: 0px;
-  bottom: 0px;
-  opacity: 0;
-  transition: all 0.5s;
-  box-shadow: 0 0 30px 30px rgb(24, 106, 230);
-}
-
-.roll-dice:active:after {
-  box-shadow: 0 0 0 0 rgb(56, 52, 52);
-  position: absolute;
-  border-radius: 6px;
-  left: 120px;
-  top:0;
-  opacity: 1;
-  transition: 0s;
 }
 
 .roll-dice:active {
